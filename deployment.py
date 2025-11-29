@@ -11,7 +11,6 @@ image = (
 
 app = modal.App(name="marimo-app")
 
-@modal.concurrent
 @app.function(image=image)
 @modal.web_server(8000, startup_timeout=60)
 def marimo_app():
